@@ -22,3 +22,4 @@ for idx, val in enumerate(cube_list):
         result += cube_list[idx]
 
 print(result)
+
