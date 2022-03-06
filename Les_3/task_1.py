@@ -1,11 +1,18 @@
+"""1. Написать функцию num_translate(), переводящую числительные от 0 до 10 c английского на русский язык.
+Если перевод сделать невозможно, вернуть None. Подумайте, как и где лучше хранить информацию,
+необходимую для перевода: какой тип данных выбрать, в теле функции или снаружи.
+
+2.Доработать предыдущую функцию в num_translate_adv(): реализовать корректную работу с числительными,
+начинающимися с заглавной буквы — результат тоже должен быть с заглавной. Например:"""
+
 tr_dict = {'one': 'один', 'two': 'два', 'three': 'три', 'four': 'четыре'}
 
 
-def num_translate(word):
+def num_translate_adv(word):
     if word.istitle():
         return str(tr_dict.get(word.lower())).title()
     return tr_dict.get(word)
 
 
-print(num_translate('Four'))
-print(num_translate('two'))
+print(num_translate_adv('Four'))
+print(num_translate_adv('two'))
